@@ -192,8 +192,10 @@ To classify reviews in different sentiment classes (positive, negative and neutr
 Random Forest Classifier,                          Logistic Regression,                      Decision Tree Classifier,
 KNeighbors Classifier,                                      SVC,                             Naïve-Bayes Classifier 
 
-*Model Selection*
-Here we are using cross validaton by using all of the classification algorithms first to select the best peforming model.
+*Model Selection*:
+
+Here we have done cross validaton by using all of the classification algorithms first to select the best performing model. 
+
 
 
 
@@ -211,6 +213,27 @@ true positive /( true positive + false negative).
 F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 5]
 ![image](https://user-images.githubusercontent.com/102472369/171466685-94b6b4f9-0eee-440e-bdce-3d232a23d2d3.png)
 ###### *Fig 5: F1 Score evaluation*
+
+*Confusion Matrix*:
+The Confusion matrix of evaluation is also calculated. It is thus capable of judging an externally written review as positive, negative or neutral. 
+
+The Confusion Matrix Format is as follows: [Fig 6]
+![image](https://user-images.githubusercontent.com/102472369/171543643-d83a3fd8-a510-4291-a3bc-08562b6f4c52.png)
+###### *Fig 6: Format of Confusion Matrix*
+
+*ROC-AUC curve*:
+
+In statistics, a receiver operating characteristic curve, i.e. ROC curve, is a graphical plot that illustrates the diagnostic ability of a classifier system as its discrimination threshold is varied. The Total Operating Characteristic (TOC) expands on the idea of ROC by showing the total information in the two-by-two contingency table for each threshold. ROC gives only two bits of relative information for each threshold, thus the TOC gives strictly more information than the ROC. When using normalized units, the area under the curve (often referred to as simply the AUC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
+
+
+## Conclusion and Future Scopes
+*Conclusion*:
+
+Sentiment analysis is one of the most shining field of text and data mining in numerous sectors. It paints a clear picture of the most important issues, allowing us to automate decisions based on large amounts of data rather than pure intuition. This article focuses on a typical Brand Sentiment Analysis model consisting of four core steps, namely Exploratory Data Analysis (EDA), Review analysis, Sentiment Classification, and Sentiment distribution of the top most brand according to the user ratings.  We applied the Logistic Regression for sentiment classification. Our system will provide better and efficient solution to the cars of different brands’ business strategy. Furthermore, we concluded the insights of the sentiment distribution of the most wanted car brand according to the online users and how they compare the other brands while making a decision of brand. Sentiment analysis is an emerging research area in text mining and computational linguistics, and has attracted considerable research attention in the past few years. Future research shall explore sophisticated methods for opinion and product feature extraction, as well as new classification models that can address the ordered labels property in rating inference. Applications that utilize results from sentiment analysis are also expected to emerge in the near future.
+
+*Future Scopes*:
+
+Data analysis on Automobile analytics allows companies to form decisions supported performance of their manufacture products. The analysis report of our model induces relevant information about the vehicles to the car companies as well. The accuracy is extremely questionable during this case. So, with the assistance of our model, the accurate information of the vehicles can be determined precisely. As we concluded the insights of the sentiment distribution of the most wanted car brand according to the online users and how they compare the other brands while making a decision of brand, it would be also helpful for automobiles companies in strategy making.
 
 
 
