@@ -178,6 +178,11 @@ Here we've splitted as Bigram and considered their combined weight for our data.
 
 ✍**SENTIMENT CLASSIFICATION ALGORITHM:**
 
+_**Handling Imbalance(SMOTE Method)**_:
+
+In our target feature, there is a lot of positive sentiments compared to negative and neutral. So it is crucial to balance the classes in such situation. Here we have used SMOTE(Synthetic Minority Oversampling Technique) to balance out the imbalanced dataset problem.
+SMOTE is an oversampling technique where the synthetic samples are generated for the minority class. This algorithm helps to overcome the overfitting problem posed by random oversampling. It focuses on the feature space to generate new instances with the help of interpolation between the positive instances that lie together.
+
 *Predictor Variable* - One or more variables that are used to determine(Predict) the 'Target Variable'.
 Top 5000 words taken as tokenized form, is our Predictor Variable.
 
@@ -222,24 +227,31 @@ F1 score (also F-score or F-measure) is a measure of a test's accuracy. It consi
 ![image](https://user-images.githubusercontent.com/102472369/171466685-94b6b4f9-0eee-440e-bdce-3d232a23d2d3.png)
 ###### *Fig 6: F1 Score evaluation*
 
-*Confusion Matrix*:
+_**Confusion Matrix**_:
 The Confusion matrix of evaluation is also calculated. It is thus capable of judging an externally written review as positive, negative or neutral. 
 
 The Confusion Matrix Format is as follows: [Fig 7]
 ![image](https://user-images.githubusercontent.com/102472369/171543643-d83a3fd8-a510-4291-a3bc-08562b6f4c52.png)
 ###### *Fig 7: Format of Confusion Matrix*
 
-*ROC-AUC curve*:
+_**ROC-AUC curve**_:
 
 In statistics, a receiver operating characteristic curve, i.e. ROC curve, is a graphical plot that illustrates the diagnostic ability of a classifier system as its discrimination threshold is varied. The Total Operating Characteristic (TOC) expands on the idea of ROC by showing the total information in the two-by-two contingency table for each threshold. ROC gives only two bits of relative information for each threshold, thus the TOC gives strictly more information than the ROC. When using normalized units, the area under the curve (often referred to as simply the AUC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
 
-*Checking for Overfitting/Underfitting*:
+_**Checking for Overfitting/Underfitting**_:
 
 I calculated training set score as 0.9965. Similarly, I calculate test set score as 0.9749. So, the model has learnt the relationships appropriately from the training data. Thus, the model performs good on the training data. It is a clear sign of good-fit. 
 
-*Brand Analysis on the basis of sentiment classes*:
+_**Brand Analysis on the basis of sentiment classes**_:
 
 After the implementation of sentiment classification, we got the values of sentiment distribution of all the car brands. The sum and mean of the Ratings and Sentiments have also been determined. We could see the Top 10 Car Brands as users choice and look insight more of the top brand among all.
+
+_**Sample Output**_:
+
+To clarify the performance of our model, we created a user given input where random comments about cars have been passed through. We have to check whether the model giving correct sentiment class or not on the basis of that review.
+![image](https://user-images.githubusercontent.com/102472369/171734514-63921b6e-1759-4a41-8575-a97736f41c64.png)
+###### *Fig 8: Input given bu User and Sentiment classification of the review*
+
 
 
 ## Conclusion and Future Scopes
