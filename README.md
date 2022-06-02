@@ -208,10 +208,13 @@ Precision (also called positive predictive value) is the fraction of relevant in
 ###### *Fig 4: Presision and Recall from relevant and retrieved documents*
 
 •	Precision, which indicates how many of the items that we identified were relevant, is 
+
 true positive / (true positive + false positive).
 
 •	Recall, which indicates how many of the relevant items that we identified, is 
+
 true positive /( true positive + false negative).
+
 F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 5]
 ![image](https://user-images.githubusercontent.com/102472369/171466685-94b6b4f9-0eee-440e-bdce-3d232a23d2d3.png)
 ###### *Fig 5: F1 Score evaluation*
