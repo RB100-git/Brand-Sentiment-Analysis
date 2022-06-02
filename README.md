@@ -177,6 +177,7 @@ Here we've splitted as Bigram and considered their combined weight for our data.
 
 
 ✍**SENTIMENT CLASSIFICATION ALGORITHM:**
+
 *Predictor Variable* - One or more variables that are used to determine(Predict) the 'Target Variable'.
 Top 5000 words taken as tokenized form, is our Predictor Variable.
 
@@ -208,6 +209,7 @@ Precision (also called positive predictive value) is the fraction of relevant in
 
 •	Precision, which indicates how many of the items that we identified were relevant, is 
 true positive / (true positive + false positive).
+
 •	Recall, which indicates how many of the relevant items that we identified, is 
 true positive /( true positive + false negative).
 F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 5]
