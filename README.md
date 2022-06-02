@@ -238,6 +238,7 @@ In statistics, a receiver operating characteristic curve, i.e. ROC curve, is a g
 I calculated training set score as 0.9965. Similarly, I calculate test set score as 0.9749. So, the model has learnt the relationships appropriately from the training data. Thus, the model performs good on the training data. It is a clear sign of good-fit. 
 
 *Brand Analysis on the basis of sentiment classes*:
+
 After the implementation of sentiment classification, we got the values of sentiment distribution of all the car brands. The sum and mean of the Ratings and Sentiments have also been determined. We could see the Top 10 Car Brands as users choice and look insight more of the top brand among all.
 
 
