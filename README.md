@@ -216,6 +216,7 @@ true positive / (true positive + false positive).
 true positive /( true positive + false negative).
 
 F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 5]
+
 ![image](https://user-images.githubusercontent.com/102472369/171466685-94b6b4f9-0eee-440e-bdce-3d232a23d2d3.png)
 ###### *Fig 5: F1 Score evaluation*
 
