@@ -196,16 +196,18 @@ KNeighbors Classifier,                                      SVC,                
 *Model Selection*:
 
 Here we have done cross validaton by using all of the classification algorithms first to select the best performing model. 
+![image](https://user-images.githubusercontent.com/102472369/171699459-bc18e37b-447a-470f-9806-bdeebfc0ff17.png)
+###### *Fig 4: Accuracies of all the classifiers*
 
-
+From the results, we can see all the classifier algorithms are showing pretty good results. Since Logistic Regression depends on a calculation based on ‘weights’, numerical encoding of categorical variables can lead the algorithm to treat certain categories are of higher importance compared to others, depending on the number assigned.For the purpose of giving 'weights' to texts, we have already performed TF-IDF. So as for model selection, we are choosing Logistic Regression, outdone the rest of the algorithms and all the accuracies from the results are more than 80%
 
 
 ## Results
 The ultimate outcome of this dataset after review analysis is that, the machine is capable of judging whether an entered sentence bears positive response or negative response.
 To discuss about the classification report, it’s needed to know about Precision, Recall and F1 Score.
-Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances, while Recall (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances. Both precision and recall are therefore based on an understanding and measure of relevance. [Fig 4]
+Precision (also called positive predictive value) is the fraction of relevant instances among the retrieved instances, while Recall (also known as sensitivity) is the fraction of relevant instances that have been retrieved over the total amount of relevant instances. Both precision and recall are therefore based on an understanding and measure of relevance. [Fig 5]
 ![image](https://user-images.githubusercontent.com/102472369/171466140-564ffb9b-a72e-4a72-9f45-94f95f7aec09.png)
-###### *Fig 4: Presision and Recall from relevant and retrieved documents*
+###### *Fig 5: Presision and Recall from relevant and retrieved documents*
 
 •	Precision, which indicates how many of the items that we identified were relevant, is 
 
@@ -215,21 +217,28 @@ true positive / (true positive + false positive).
 
 true positive /( true positive + false negative).
 
-F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 5]
+F1 score (also F-score or F-measure) is a measure of a test's accuracy. It considers both the precision and the recall of the test to compute the score. The F1 score is the harmonic average of the precision and recall, where an F1 score reaches its best value at 1 (perfect precision and recall) and worst at 0. [Fig 6]
 
 ![image](https://user-images.githubusercontent.com/102472369/171466685-94b6b4f9-0eee-440e-bdce-3d232a23d2d3.png)
-###### *Fig 5: F1 Score evaluation*
+###### *Fig 6: F1 Score evaluation*
 
 *Confusion Matrix*:
 The Confusion matrix of evaluation is also calculated. It is thus capable of judging an externally written review as positive, negative or neutral. 
 
-The Confusion Matrix Format is as follows: [Fig 6]
+The Confusion Matrix Format is as follows: [Fig 7]
 ![image](https://user-images.githubusercontent.com/102472369/171543643-d83a3fd8-a510-4291-a3bc-08562b6f4c52.png)
-###### *Fig 6: Format of Confusion Matrix*
+###### *Fig 7: Format of Confusion Matrix*
 
 *ROC-AUC curve*:
 
 In statistics, a receiver operating characteristic curve, i.e. ROC curve, is a graphical plot that illustrates the diagnostic ability of a classifier system as its discrimination threshold is varied. The Total Operating Characteristic (TOC) expands on the idea of ROC by showing the total information in the two-by-two contingency table for each threshold. ROC gives only two bits of relative information for each threshold, thus the TOC gives strictly more information than the ROC. When using normalized units, the area under the curve (often referred to as simply the AUC) is equal to the probability that a classifier will rank a randomly chosen positive instance higher than a randomly chosen negative one (assuming 'positive' ranks higher than 'negative').
+
+*Checking for Overfitting/Underfitting*:
+
+I calculated training set score as 0.9965. Similarly, I calculate test set score as 0.9749. So, the model has learnt the relationships appropriately from the training data. Thus, the model performs good on the training data. It is a clear sign of good-fit. 
+
+*Brand Analysis on the basis of sentiment classes*:
+After the implementation of sentiment classification, we got the values of sentiment distribution of all the car brands. The sum and mean of the Ratings and Sentiments have also been determined. We could see the Top 10 Car Brands as users choice and look insight more of the top brand among all.
 
 
 ## Conclusion and Future Scopes
@@ -242,20 +251,15 @@ Sentiment analysis is one of the most shining field of text and data mining in n
 Data analysis on Automobile analytics allows companies to form decisions supported performance of their manufacture products. The analysis report of our model induces relevant information about the vehicles to the car companies as well. The accuracy is extremely questionable during this case. So, with the assistance of our model, the accurate information of the vehicles can be determined precisely. As we concluded the insights of the sentiment distribution of the most wanted car brand according to the online users and how they compare the other brands while making a decision of brand, it would be also helpful for automobiles companies in strategy making.
 
 
+## References
+• “Automotive Industry of India”, https://en.wikipedia.org/wiki/Automotive_industry_in_India
 
+•“ Number of vehicles in operation across India from financial year 1951 to 2019 (in millions)”, https://www.statista.com/statistics/664729/total-number-of-vehicles-india/#:~:text=In%20a%20country%20with%20the%20third%20largest%20road,who%20used%20personal%20or%20shared%20vehicles%20for%20commute
 
+•Understanding Word N-grams and N-gram Probability in Natural Language Processing [online],
+https://towardsdatascience.com/understanding-word-n-grams-and-n-gram-probability-in-natural-language-processing-9d9eef0fa058
 
+•”Understanding TF-IDF for Machine Learning” [online], https://www.capitalone.com/tech/machine-learning/understanding-tf-idf/  
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
+• “Accuracy, Precision, Recall & F1-Score – Python Examples” [online]
+https://vitalflux.com/accuracy-precision-recall-f1-score-python-example/
